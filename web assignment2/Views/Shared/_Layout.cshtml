@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9547175c76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="js/slider.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="socialbar">
+            <div id="social-right" class="social">
+                <div id="right-social">
+                    <a href="#" class="social-data">FAQs</a>
+                    <span> | </span>
+                    <a href="#" class="social-data">HELP</a>
+                    <span> | </span>
+                    <a href="#" class="social-data">Suppost</a>
+                </div>
+            </div>
+            <div class="social" id="social-left">
+                <div id="left-social">
+                    <a class="icons" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="icons" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="icons"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="head-bar">
+            <div class="head-item" id="head-left"><a href="#"><img src="images/logo.png" alt=""><span>Blue Fire</span></a></div>
+            <div class="head-item" id="head-center">
+                <input type="text" placeholder="Search" name="" id="search">
+                <a href="#"><span  id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span></a>
+            </div>
+            <div class="head-item" id="head-right">
+                <a href="#" id="cart-link"><span class="icon-btn" id="right-icon"><i id="cart-icon" class="fa-solid fa-cart-arrow-down"></i><span id="count">0</span></span></a>
+            </div>
+        </div>
+        <div id="nav-bar">
+            <div  id="sm-nav-logo-box"><a href="#"><img src="images/logo.png" alt=""><span>Blue Fire</span></a></div>
+            <ul id="nav-list">
+                <li id="home">@Html.ActionLink("Home" , "index" , new {@class = "nav-link"})</li>
+                <a href="#"><li>Shop</li></a>
+                <a href="#"><li>Shop Details</li></a>
+                <li id="home">@Html.ActionLink("Contact" , "contact" , new {@class = "nav-link"})</li>
+                <a href="#"><li>Pages</li></a>
+            </ul>
+            <div id="log-btn">
+                <a class="log-btns" href="#">Login</a>
+                <a class="log-btns" href="#">Register</a>
+            </div>
+            <div id="sm-nav-bar-btn">
+                <a href="#"><span class="icon-btn"><i class="fa-solid fa-bars"></i></span></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <div class="foot-box" id="f1">
+                <div id="f-logo"><img src="images/logo.png" height="100px" alt=""><h1>BLUE FIRE</h1></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque itaque ipsa ducimus doloribus! Reiciendis quibusdam alias, accusamus quam ut, qui sapiente quas eaque, porro quis quaerat soluta tenetur nihil distinctio.</p><br>
+                <span><i class="fa-solid fa-location-dot"></i>  USKT, Sialkot</span><br>
+                <span><i class="fa-solid fa-envelope"></i>  19101001-095@uskt.edu.com</span>
+            </div>
+            <div class="foot-box" id="f1">
+                <div id="f-center"><h1>Quick Links</h1></div>
+                <a class="q-links" href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a>
+                <a class="q-links" href="#"><i class="fa-solid fa-chevron-right"></i> Our Shop</a>
+                <a class="q-links" href="#"><i class="fa-solid fa-chevron-right"></i> Shop Details</a>
+                <a class="q-links" href="#"><i class="fa-solid fa-chevron-right"></i> Check Outs</a>
+                <a class="q-links" href="contact-us.html"><i class="fa-solid fa-chevron-right"></i> Contact us</a>
+            </div>
+        </div>
+        <center><p>&copy; all copy right are reserver by Iqra Malik from USKT | Roll no 19101001-095</p></center>
+    </footer>
+</body>
+</html>
