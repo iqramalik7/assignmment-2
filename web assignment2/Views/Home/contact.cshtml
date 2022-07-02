@@ -23,10 +23,34 @@
         </div>
     </section>
     <section>
-        <div id="form">
-            <input placeholder="Name" type="text" name="" id="name">
-            <input placeholder="E mail" type="text" name="" id="mail">
-            <input placeholder="Message" type="text" name="" id="name">
-            <button>Send Message</button>
-        </div>
+        <form action="formm" method="get">
+            First Name : <input type="text" name="fname" id="first">
+            <br>
+            <br>
+            Last Name : <input type="text" name="lname" id="last">
+            <br>
+            <br>
+            E-mail : <input type="email" name="email" id="mail">
+            <br>
+            <br>
+            Phone no : <input type="number" name="phoneno" id="no">
+            <br>
+            <br>
+            Gender : <input type="radio" name="gender" value="Male" id="gen">
+            <label for="html">Male</label>
+            <input type="radio" name="gender" value="Female" id="gen">
+            <label for="html">Female</label>
+            <br>
+            <br>
+            <label for="dep">Customer Department :</label>
+            <select name="dep" id="dep">
+           <option value="sale">Sales</option>
+           <option value="it">IT</option>
+            </select>
+            <br>
+            <br>
+            Message : <textarea name="textbox" id="textbox" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p style="color:red">@ViewBag.message</p>
     </section>

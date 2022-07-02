@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/9547175c76.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="~/css/slider.css">
+    <link rel="stylesheet" href="~/css/style.css">
     <script src="js/slider.js"></script>
     
 </head>
@@ -43,10 +44,10 @@
         <div id="nav-bar">
             <div  id="sm-nav-logo-box"><a href="#"><img src="images/logo.png" alt=""><span>Blue Fire</span></a></div>
             <ul id="nav-list">
-                <li id="home">@Html.ActionLink("Home" , "index" , new {@class = "nav-link"})</li>
+                <li id="home">@Html.ActionLink("Home" , "index" )</li>
                 <a href="#"><li>Shop</li></a>
                 <a href="#"><li>Shop Details</li></a>
-                <li id="home">@Html.ActionLink("Contact" , "contact" , new {@class = "nav-link"})</li>
+                <li id="home">@Html.ActionLink("Contact" , "contact")</li>
                 <a href="#"><li>Pages</li></a>
             </ul>
             <div id="log-btn">
