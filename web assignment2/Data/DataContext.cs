@@ -8,7 +8,6 @@ namespace web_assignment2.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }
-
         public DbSet<Customerinfo> Customerinfo { get; set; }
     }
 }
