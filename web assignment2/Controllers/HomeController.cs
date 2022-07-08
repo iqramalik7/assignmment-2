@@ -11,6 +11,7 @@ namespace web_assignment2.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
 
