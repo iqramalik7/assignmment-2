@@ -5,7 +5,7 @@
 }
 
 <head>
-    <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="~/css/contact-us.css">
 </head>
 
 <section>
@@ -13,20 +13,44 @@
             <div id="left-container">
                 <a id="categories-btn" href="#">Categories <i class="fa-solid fa-chevron-down"></i></a>
             </div>
-                
-        </div>
-    </section>
-    <section>
-        <div id="contact-container">
-            <h1>CONTACT US</h1>
-            <p><a id="home1" href="#">Home</a> - <a id="contact1" href="#">Contact</a> </p>
-        </div>
-    </section>
-    <section>
-        <div id="form">
-            <input placeholder="Name" type="text" name="" id="name">
-            <input placeholder="E mail" type="text" name="" id="mail">
-            <input placeholder="Message" type="text" name="" id="name">
-            <button>Send Message</button>
+            <div id="right-container">
+                <div id="right-c-1">
+                    <h1 id="chead">Contact US</h1>
+                </div>
+
+                <div id="right-c-2">
+                    <div id="form1">
+                        <form asp-action="formm" asp-controller="Home" method="post">
+                            First Name : <input type="text" name="name" id="first">
+                            <br>
+                            <br>
+               
+                            <br>
+                            E-mail : <input type="email" name="email" id="mail">
+                            <br>
+                            <br>
+                            Phone no : <input type="number" name="phoneno" id="no">
+                            <br>
+                            <br>
+                            Gender : <input type="radio" name="gender" value="Male" id="gen">
+                            <label for="html">Male</label>
+                            <input type="radio" name="gender" value="Female" id="gen">
+                            <label for="html">Female</label>
+                            <br>
+                            <br>
+                            <label for="dep">Customer Department :</label>
+                            <select name="dep" id="dep">
+                           <option value="sale">Sales</option>
+                           <option value="it">IT</option>
+                            </select>
+                            <br>
+                            <br>
+                            Message : <textarea name="message" id="textbox" cols="30" rows="10"></textarea><br>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    @Html.ActionLink("show" , "table");
+                </div>
+            </div>
         </div>
     </section>
